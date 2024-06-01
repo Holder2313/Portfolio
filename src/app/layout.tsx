@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Kulim_Park } from "next/font/google";
 import "./globals.css";
+import Header from "@/layout/Header";
+import ThemeProvider from "@/providers/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+const kulimPark = Kulim_Park({ subsets: ["latin"], weight: ['400', '700']});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={kulimPark.className}>
+        <ThemeProvider attribute='class' defaultTheme ="system" enableSystem >
+        <Header />
+        {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

@@ -1,0 +1,101 @@
+
+{
+  "projects": [ 
+    {
+      "description": "Création de la page d’acceuil d’une agence de voyage",
+      "client": "Booki",
+      "date": "Novembre 2023",
+      "contexte": "Dans le cadre de ma collaboration avec Booki, une start-up spécialisée dans la réservation d'hébergements et d'activités, j'ai été chargé de créer la page d'accueil de l'agence de voyage en utilisant HTML et CSS. Ce projet, visait à développer une interface web responsive à partir de maquettes Figma pour mobile, tablette et desktop. Mon objectif principal était de réaliser une intégration fidèle et fonctionnelle des maquettes tout en assurant un design responsive performant sur tous les appareils.",
+      "approche": "J'ai minutieusement analysé et découpé les maquettes Figma pour définir une structure HTML solide. Utilisant Flexbox, j'ai intégré le header, assurant un design fidèle et interactif. J'ai créé un formulaire de recherche en trois parties, et intégré les filtres et les cartes d'hébergements, en veillant à leur interactivité et à une mise en page cohérente. J'ai structuré le footer en trois colonnes avec Flexbox, garantissant une présentation équilibrée. En appliquant des media queries, j'ai rendu le site entièrement responsive pour mobile, tablette et desktop. Enfin, j'ai validé le code avec les outils W3C pour garantir sa qualité et sa conformité. Cette approche démontre ma capacité à gérer un projet web de bout en bout, en respectant les spécifications techniques et en collaborant efficacement avec l'équipe.",
+      "tags": ["HTML", "CSS", "responsive"],
+      "img": ["/assets/screenshots/booki/booki_mobile.webp", "booki_2.webp", "booki_mobile.webp"],
+      "alt": ["booki mobile"],
+      "logo": "/assets/screenshots/booki/booki_logo.webp",
+      "id": 1
+    },
+    {
+      "description": "Création et animation de l’interface du site mobile Ohmyfood",
+      "client": "Ohmyfood",
+      "date": "Decembre 2023",
+      "contexte": "Dans le cadre de mon alternance chez OhMyFood, une start-up innovante dans le domaine de la restauration, j'ai été chargé d'améliorer l'interface mobile du site en utilisant des animations CSS. L'objectif était de développer un site mobile-first qui répertorie les menus de restaurants gastronomiques, tout en assurant une expérience utilisateur engageante grâce à des animations CSS. Le projet comprenait également l'utilisation de Sass pour structurer le CSS et Git/GitHub pour la gestion de version. Ce projet m'a permis de renforcer mes compétences en développement front-end, design responsive et gestion de projets collaboratifs.",
+      "approche": "Pour ce projet, j'ai d'abord installé et configuré l'environnement de développement en utilisant Git et GitHub pour le versionnement. J'ai structuré le projet avec des dossiers organisés pour les assets, le Sass et les pages spécifiques. En adoptant une approche mobile-first, j'ai intégré la page d'accueil en utilisant Sass pour un code CSS plus maintenable. J'ai ensuite implémenté des animations CSS, enrichissant l'expérience utilisateur. J'ai assuré un design responsive en appliquant des media queries pour que le site soit optimal sur tous les formats d'écran. J'ai intégré les pages des restaurants en maintenant la cohérence et l'homogénéité du design. Enfin, j'ai validé le code avec les outils W3C pour garantir sa qualité et sa conformité. Cette approche a renforcer mes compétences en développement front-end, design responsive, utilisation de préprocesseurs CSS, et gestion de projets collaboratifs avec Git et GitHub.",
+      "tags": ["Sass", "responsive"],
+      "img": ["/assets/screenshots/ohmyfood/ohmyfood_mobile.webp", "ohmyfood_2.webp", "ohmyfood_mobile.webp"],
+      "alt": ["ohmyfood mobile"],
+      "logo": "/assets/screenshots/ohmyfood/ohmyfood_logo.webp",
+      "id": 2
+    },
+    {
+      "description": "Création du site portfolio de Sophie Bluel, architecte d'intérieur.",
+      "client": "Sophie bluel",
+      "date": "Janvier 2024",
+      "contexte": "En collaboration avec l’agence ArchiWebos, j'ai été travaillé au développement du site portfolio d'une architecte d'intérieur. Ce projet visait à rendre la page web dynamique en utilisant JavaScript et à communiquer avec une API. Les tâches incluaient la gestion des événements utilisateurs, la manipulation du DOM avec JavaScript, la création d'une page de connexion pour l'administrateur et une modale pour uploader de nouveaux médias. Ce projet a permis de démontrer mes compétences en JavaScript, en intégration d'API, et en gestion de versions avec Git et GitHub.",
+      "approche": "Pour ce projet, j'ai commencé par installer et configurer l'environnement de développement avec Node.js et npm, en utilisant Git et GitHub pour la gestion de versions. J'ai intégré la page de présentation des travaux en récupérant les données via fetch et en manipulant le DOM avec JavaScript pour afficher dynamiquement les projets. J'ai implémenté un menu de catégories pour filtrer les travaux et développé une page de connexion pour l'administrateur, assurant l'authentification via l'API. J'ai créé une modale pour l'ajout de nouveaux projets, permettant de gérer les médias sans rechargement de page. Enfin, j'ai validé et testé le code avec les outils W3C, garantissant sa qualité et conformité. Cette approche a renforcé mes compétences en JavaScript, intégration d'API, et gestion de projet avec Git.",
+      "tags": ["Javascript", "API"],
+      "img": ["/assets/screenshots/sophie_bluel/sophie_bluel_3.webp", "sophie_bluel_2.webp", "sophie_bluel_3.webp"],
+      "alt": ["sophie bluel desktop"],
+      "logo": "/assets/screenshots/sophie_bluel/sophie_bluel_logo.webp",
+      "id": 3
+    },
+    {
+      "description": "Planification du développement du site Menu Maker",
+      "client": "Qwenta",
+      "date": "Fevrier 2024",
+      "contexte": "En collaboration avec l’agence Webgencia, j'ai été chargé de la planification du développement du site \"Menu Maker\" pour notre client Qwenta. Ce site permettra aux restaurateurs d'afficher et de mettre en page leurs menus facilement. Ma mission principale était de préparer les spécifications techniques, d'organiser le projet avec un tableau Kanban et de mettre en place une veille technologique pour suivre les dernières tendances et technologies pertinentes pour ce projet. Cette expérience a renforcé mes compétences en gestion de projets, en rédaction de spécifications techniques, et en utilisation d'outils de gestion de projet.",
+      "approche": "J'ai analysé les maquettes Figma et les spécifications fonctionnelles pour bien comprendre les besoins. J'ai ensuite mis en place une veille technologique avec Feedly pour suivre les dernières tendances pertinentes. J'ai rédigé les spécifications techniques en détaillant les besoins fonctionnels et les solutions technologiques basées sur ma veille. J'ai organisé le projet avec un tableau Kanban sur Notion, catégorisant les tâches et estimant leur complexité. J'ai décomposé les fonctionnalités en tâches spécifiques et précisé les spécifications techniques pour chaque tâche. Enfin, j'ai préparé la présentation finale pour le Product Owner, consolidant tout le travail réalisé. Cette approche a renforcé mes compétences en gestion de projet, rédaction technique, et utilisation d'outils de veille et de gestion de projet.",
+      "tags": ["gestion de projet", "rédaction technique"],
+      "img": ["/assets/screenshots/qwenta/qwenta_3.webp", "qwenta_2.webp", "qwenta_3.webp"],
+      "alt": ["qwenta desktop"],
+      "logo": "/assets/screenshots/qwenta/qwenta_logo.webp",
+      "id": 4
+    },
+    {
+      "description": "Création d’une application de location d’appartement",
+      "client": "Kasa",
+      "date": "Fevrier 2024",
+      "contexte": "En collaboration avec Kasa, une entreprise leader dans la location d'appartements entre particuliers, j'ai été chargé de refondre l'application web de la plateforme en utilisant React. L'objectif était de créer une application moderne, réactive et responsive en se basant sur les maquettes fournies et des données simulées extraites d'un fichier JSON.",
+      "approche": "J'ai initialisé le projet avec Create React App et configuré le repo GitHub. J'ai intégré le fichier JSON contenant les données simulées et configuré React Router pour gérer la navigation. J'ai développé les composants principaux tels que la page d'accueil, la page à propos et la page d'erreur, en suivant les maquettes Figma et en utilisant Sass pour le CSS. J'ai implémenté des fonctionnalités interactives comme le Collapse et le carrousel, en gérant les états et les événements utilisateurs. J'ai également intégré des redirections vers la page d'erreur en cas d'ID incorrect pour les propriétés. Enfin, j'ai validé et vérifié que tous les composants respectaient les spécifications et les designs fournis. Ce projet a permis renforcer mes compétences en développement front-end avec React, gestion de la navigation avec React Router, utilisation de Sass pour le CSS, et implémentation d'animations CSS pour une meilleure expérience utilisateur.",
+      "tags": ["React", "Sass"],
+      "img": ["/assets/screenshots/kasa/kasa_4.webp", "kasa_2.webp", "kasa_3.webp"],
+      "alt": ["kasa tablet"],
+      "logo": "/assets/screenshots/kasa/kasa_logo.webp",
+      "id": 5
+    },
+    {
+      "description": "optimiser le référencement et les performances du site Nina Carducci, photographe",
+      "client": "Nina Carducci",
+      "date": "Mars 2024",
+      "contexte": "J'ai été chargé d'optimiser le site de Nina Carducci, une photographe, pour améliorer ses performances et son référencement (SEO). L'objectif était d'améliorer la vitesse de chargement du site, sa structure de code, son accessibilité, et de mettre en place un référencement local et des balises pour les réseaux sociaux. Ce projet impliquait l'utilisation d'outils comme Lighthouse et Wave pour analyser et optimiser le site, et la création d'un rapport détaillant les résultats avant et après les modifications.",
+      "approche": "J'ai commencé par effectuer un audit initial avec Lighthouse et GTMetrix pour identifier les problèmes de performance et de référencement. J'ai listé les optimisations nécessaires et priorisé celles ayant le plus grand impact. J'ai optimisé les images, minifié les fichiers HTML, CSS et JS, et amélioré la structure du code. J'ai utilisé des balises HTML sémantiques pour améliorer le SEO, ajouté des microdonnées Schema.org pour le référencement local, et des balises meta pour les réseaux sociaux. J'ai corrigé les problèmes d'accessibilité avec l'outil Wave. Enfin, j'ai généré des rapports avant et après optimisation avec Lighthouse pour montrer les améliorations réalisées. Cette approche a renforcé mes compétences en optimisation des performances web, SEO technique, gestion de l'accessibilité, et utilisation d'outils d'analyse comme Lighthouse et Wave.",
+      "tags": ["Audit", "SEO", "accessibilité"],
+      "img": ["/assets/screenshots/nina_carducci/nina_carducci_3.webp", "nina_carducci_2.webp", "nina_carducci_mobile.webp"],
+      "alt": ["nina carducci mobile"],
+      "logo": "/assets/screenshots/nina_carducci/nina_carducci_logo.webp",
+      "id": 6
+    },
+    {
+      "description": "débugger et finaliser le développement du site d’une agence événementielle",
+      "client": "724 Events",
+      "date": "Avril 2024",
+      "contexte": "J'ai été engagé par l'agence événementielle 724events pour débugger et finaliser leur site vitrine one-page. Ma mission consistait à identifier et résoudre les bugs existants, compléter le cahier de recette pour les tests, et assurer la mise en place d'un site fonctionnel et optimisé.",
+      "approche": "J'ai utilisé React Developer Tools et Chrome DevTools pour analyser l'arbre des composants et identifier les bugs signalés. Après avoir localisé les problèmes, j'ai corrigé les bugs en modifiant le code et validé les correctifs en exécutant les tests unitaires et d'intégration. J'ai complété le cahier de recette en ajoutant des scénarios de tests pour vérifier le bon fonctionnement du site. J'ai également écrit et exécuté des tests unitaires pour des composants spécifiques et des tests d'intégration pour m'assurer que les différentes parties du site fonctionnaient bien ensemble. Enfin, j'ai préparé un plan de présentation pour le client, détaillant les bugs corrigés, les méthodes utilisées pour les résoudre et l'impact des correctifs. Cette approche a renforcé mes compétences en débogage, utilisation des outils de développement React, rédaction de cahier de recette, et gestion de projet.",
+      "tags": ["Devtools", "tests/jest"],
+      "img": ["/assets/screenshots/724/724_3.webp", "724_2.webp", "724_mobile.webp"],
+      "alt": ["724 desktop"],
+      "logo": "/assets/screenshots/724/724_logo.webp",
+      "id": 7
+    },
+    {
+      "description": "Création de l’interface et gestion de l’authentification d’une application bancaire",
+      "client": "ArgentBank",
+      "date": "Mai 2024",
+      "contexte": "En tant que développeur front-end chez Argent Bank, j'ai été chargé de développer le front-end d'une application bancaire en utilisant React et Redux. Mon objectif était de créer une application web dynamique et réactive, intégrant le front-end avec le back-end via des appels API pour assurer une communication fluide entre le client et le serveur. Le projet comprenait la mise en place d'un tableau de bord utilisateur complet et responsive, la gestion des données de l'application avec Redux, et l'utilisation de Swagger pour documenter les points d'accès de l'API.",
+      "approche": "J'ai installé le back-end de l'application, configuré Node.js et testé les routes de login et de récupération du profil utilisateur pour m'assurer de leur bon fonctionnement. J'ai créé l'application React en utilisant Create React App et intégré les différentes pages en composants React, en configurant React Router pour la navigation. Ensuite, j'ai mis en place Redux pour gérer le state global de l'application, assurant une gestion fluide des données utilisateurs. J'ai implémenté la fonctionnalité de connexion/déconnexion des utilisateurs, en utilisant Redux pour stocker et gérer les informations de session. J'ai ajouté la possibilité de mettre à jour le pseudo utilisateur via un formulaire, en veillant à ce que les modifications se répercutent correctement dans l'interface. Pour la gestion des transactions, j'ai analysé les maquettes pour définir les endpoints API nécessaires et documenté ces endpoints avec Swagger, proposant des routes API pour les opérations de transaction. J'ai écrit et testé les appels API pour assurer la communication fluide entre le front-end et le back-end, et j'ai validé l'ensemble de l'application en vérifiant les fonctionnalités demandées et les interactions entre les différents composants. Cette approche m'a permis de renforcer mes compétences en développement front-end avec React et Redux, en gestion d'API avec Swagger, et en intégration et test de systèmes complexes.",
+      "tags": ["react", "redux", "api", "swagger"],
+      "img": ["/assets/screenshots/argentBank/argentBank_4.webp", "argentBank_2.webp", "argentBank_3.webp"],
+      "alt": ["argentBank desktop"],
+      "logo": "/assets/screenshots/argentBank/argentBank_logo.webp",
+      "id": 8
+    }
+  ]
+}
