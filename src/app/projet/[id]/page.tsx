@@ -1,5 +1,11 @@
-'use client'
+"use client";
+
+import InfosProjet from "@/components/projet-page/InfosProjet";
+import { TabsProject } from "@/components/ui/TabProject";
 import React, { useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 interface Project {
   id: number;
@@ -12,6 +18,7 @@ interface Project {
   img: string[];
   logo: string;
   alt: string[];
+  github?: string;
 }
 
 interface ProjetProps {
@@ -20,7 +27,7 @@ interface ProjetProps {
   };
 }
 
-const Projet: React.FC<ProjetProps> = ({ params }) => {
+const Projet = ({ params }: ProjetProps) => {
   const { id } = params;
   const [project, setProject] = useState<Project | null>(null);
 
@@ -44,34 +51,52 @@ const Projet: React.FC<ProjetProps> = ({ params }) => {
   if (!project) return <div>Loading...</div>;
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">{project.client}</h1>
-      <img
-        src={project.img[0]}
-        alt={project.alt[0]}
-        className="w-full h-auto mb-4"
-      />
-      <p className="mb-2">
-        <strong>Description:</strong> {project.description}
-      </p>
-      <p className="mb-2">
-        <strong>Date:</strong> {project.date}
-      </p>
-      <p className="mb-2">
-        <strong>Contexte:</strong> {project.contexte}
-      </p>
-      <p className="mb-2">
-        <strong>Approche:</strong> {project.approche}
-      </p>
-      <div className="mb-2">
-        <strong>Tags:</strong>
-        <ul className="list-disc list-inside">
-          {project.tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
+    <section className="container w-full lg:h-screen flex flex-col lg:flex-row justify-between  mx-auto pt-20 p-4">
+      <div className=" mt-10 w-full lg:w-[45%] flex flex-col ">
+        <div>
+          <h1 className="text-4xl font-bold mb-4">{project.client}</h1>
+          <p className=" text-xl">{project.description} </p>
+
+          <div className=" flex mt-4">
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-50 bg-accent rounded-lg p-2 hover:bg-secondary hover:text-primary"
+              aria-label="Github"
+            >
+              <FaGithub size={24} />
+            </a>
+          </div>
+        </div>
+        <Carousel
+          showThumbs={false}
+          infiniteLoop
+          useKeyboardArrows
+          autoPlay
+          showStatus={false}
+        >
+          {project.img.map((image, index) => (
+            <div className=" h-full w-full mt-6 lg:mt-[160px] " key={index}>
+              <img
+                className=" w-full rounded"
+                src={image}
+                alt={project.alt[index]}
+              />
+            </div>
           ))}
-        </ul>
+        </Carousel>
       </div>
-    </div>
+
+      <div className="  flex flex-col w-full lg:w-1/2 mt-10 ">
+        <InfosProjet
+          client={project.client}
+          date={project.date}
+          tags={project.tags}
+        />
+        <TabsProject contexte={project.contexte} approche={project.approche} />
+      </div>
+    </section>
   );
 };
 

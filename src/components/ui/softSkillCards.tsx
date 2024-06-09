@@ -4,9 +4,9 @@ import {
   BarChart,
   UserCheck,
   Settings,
-  Heart,
   Globe,
   Shield,
+  TimerReset,
 } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
@@ -31,13 +31,13 @@ const skills = [
     icon: <Settings size={30} />,
     title: "Résolution de problèmes",
     description:
-      "Je trouve des solutions créatives et efficaces aux défis qui se présentent.",
+      " J'analyse les situations de manière critique et propose des solutions efficaces.",
   },
   {
-    icon: <Heart size={30} />,
-    title: "Empathie",
+    icon: <TimerReset size={30} />,
+    title: "Gestion du temps",
     description:
-      "Je suis capable de comprendre et de partager les sentiments des autres.",
+      " Je planifie et organise mon travail de manière efficace, en respectant les délais.",
   },
   {
     icon: <Globe size={30} />,
@@ -61,7 +61,7 @@ const cardVariants = {
     transition: {
       duration: 0.6,
       ease: "easeOut",
-      delay: i * 0.1, // Delay based on index
+      delay: i * 0.1, 
     },
   }),
 };
@@ -72,16 +72,18 @@ export default function SoftSkillCards() {
       {skills.map((skill, index) => (
         <motion.div
           key={index}
-          className="bg-secondary dark:hover:bg-primary hover:bg-accent hover:text-primary-foreground p-4 md:p-12 rounded-lg cardShadow md:h-[280px] md:w-[360px] transition"
-          custom={index} // Pass the index to the animation
+          className=" bg-secondary dark:hover:bg-primary hover:bg-accent hover:text-primary-foreground p-4 md:p-12 rounded-lg cardShadow md:h-[280px] md:w-[360px]  transition"
+          custom={index} 
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0 }}
           variants={cardVariants}
         >
           {skill.icon}
-          <h3 className={`text-xl mt-2 mb-5 ${interFont.className} `}>{skill.title}</h3>
-          <p>{skill.description}</p>
+          <h3 className={`text-xl mt-2 mb-5 ${interFont.className}   `}>
+            {skill.title}
+          </h3>
+          <p className="  ">{skill.description}</p>
         </motion.div>
       ))}
     </div>

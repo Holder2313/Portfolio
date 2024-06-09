@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const router = useRouter();
 
 
-  return (
+  return ( 
     <div className="relative cardShadow border mb-10 max-w-[340px] max-h-[200px] bg-cover bg-center rounded-lg overflow-hidden group cursor-pointer filter brightness-[80%] hover:brightness-[100%] ">
       <div className="shadow-xl flex items-center justify-center">
         {/* <div className=" absolute inset-0 w-full h-full bg-black/20"></div> */}

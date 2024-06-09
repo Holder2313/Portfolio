@@ -7,7 +7,7 @@ export default function TechSkills() {
     <section className=" container ">
       <Title
         title="Compétences techniques"
-        subTitle="Des technologies modernes pour des projets innovants"
+        subTitle="Des technologies modernes pour chaque projet"
       />
 
       <TechSkillCards />

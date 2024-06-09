@@ -4,8 +4,9 @@ import { AiOutlineHtml5 } from "react-icons/ai";
 import { DiJavascript1, DiMysql } from "react-icons/di";
 import { FaReact, FaNpm, FaSass } from "react-icons/fa";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
-import { SiJest, SiRedux } from "react-icons/si";
+import { SiJest, SiRedux, SiSwagger } from "react-icons/si";
 import { motion } from "framer-motion";
+import { TbBrandTypescript } from "react-icons/tb";
 
 const techSkills = [
   {
@@ -42,24 +43,24 @@ const techSkills = [
     name: "npm",
   },
   {
-    icon: <SiJest size={40} />,
-    name: "Jest",
+    icon: <TbBrandTypescript size={40} />,
+    name: "TypeScript",
   },
   {
-    icon: <DiMysql size={40} />,
-    name: "MySQL",
+    icon: <SiSwagger size={40} />,
+    name: "Swagger",
   },
 ];
 
 const cardVariants = {
   hidden: { opacity: 0, y: 0 },
-  visible: (i) => ({
+  visible: (index: number) => ({
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.3,
       ease: "easeOut",
-      delay: i * 0.05, // Delay based on index
+      delay: index * 0.05, 
     },
   }),
 };
@@ -71,7 +72,7 @@ export default function TechSkillCards() {
         <motion.div
           key={index}
           className="xl:w-[220px] lg:w-[160px] w-[120px] h-[120px] transition dark:hover:bg-primary hover:bg-accent bg-secondary hover:text-primary-foreground cardShadow flex flex-col justify-center items-center rounded-lg"
-          custom={index} // Pass the index to the animation
+          custom={index} 
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0 }}

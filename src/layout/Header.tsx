@@ -1,13 +1,14 @@
-"use client";
-
+'use client'
 import ToggleTheme from "@/components/ui/toggle-theme";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { Maven_Pro } from "next/font/google";
+
+const maven = Maven_Pro({ subsets: ["latin"], weight: ["400", "700"] });
 
 const Header = () => {
-  // Variable pour les classes réutilisables
   const linkClasses = "p-3 rounded-lg";
   const activeLinkClasses =
     "hover:bg-accent dark:text-primary text-secondary bg-accent p-3 rounded-lg";
@@ -25,7 +26,7 @@ const Header = () => {
       }
     };
 
-    handleResize(); // Set initial state based on screen size
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -33,7 +34,6 @@ const Header = () => {
     };
   }, []);
 
-  // Tableau des liens de navigation
   const navLinks = [
     { href: "/", label: "Accueil" },
     { href: "#about", label: "À propos" },
@@ -41,24 +41,30 @@ const Header = () => {
     { href: "#contact", label: "Contact", isActive: true },
   ];
 
-  // Variantes pour l'animation framer-motion
   const variants = {
     open: { clipPath: "circle(100% at 50% 50%)" },
     closed: { clipPath: "circle(1px at 90% 10%)" },
   };
 
+  const handleButtonClick = () => {
+    console.log("Button clicked. Current isOpen state:", isOpen);
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="bg-background fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-xl font-bold">
-          <Link href="#" className="flex items-center space-x-2 aria-hidden=true ">
-            {/* <img src="" alt="" className="h-8 w-8" /> */}
-            <span>Sébastien Perrot</span>
+        <div className="text-2xl">
+          <Link
+            href="#"
+            className="flex items-center space-x-2 aria-hidden=true"
+          >
+            <span className={maven.className}>Sébastien Perrot</span>
           </Link>
         </div>
 
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={handleButtonClick}
           className="z-10 block md:hidden focus:outline-none"
           aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
         >
@@ -67,7 +73,7 @@ const Header = () => {
 
         {isClient && (
           <motion.nav
-            className={`fixed h-screen md:h-6 bg-secondary md:bg-background md:relative inset-0 md:flex w-full md:w-auto  `}
+            className={`fixed inset-0 h-screen md:h-6 bg-secondary md:bg-background md:relative  md:flex w-full md:w-auto`}
             initial={false}
             animate={isOpen ? "open" : "closed"}
             variants={variants}
@@ -81,7 +87,16 @@ const Header = () => {
             <div className="absolute -z-10 w-full h-full flex flex-col items-center justify-center md:hidden"></div>
             <ul className="pt-10 md:pt-0 flex flex-col items-center md:flex-row md:space-x-8 text-4xl md:text-xl">
               {navLinks.map((link, index) => (
-                <li className="my-5 md:my-0" key={index}>
+                <li
+                  className="my-5 md:my-0"
+                  key={index}
+                  onClick={() => {
+                    console.log("Link clicked. Current isOpen state:", isOpen);
+                    if (window.innerWidth <= 768) {
+                      setIsOpen(false);
+                    }
+                  }}
+                >
                   <Link
                     href={link.href}
                     className={link.isActive ? activeLinkClasses : linkClasses}
