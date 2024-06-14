@@ -25,9 +25,7 @@ const MentionsLegales = () => {
         <p className=" text-xl font-semibold text-primary dark:text-cyan-600">
           Hébergement :
         </p>
-        <p className="mb-4">
-          Nom de l'hébergeur, Adresse de l'hébergeur, Téléphone de l'hébergeur
-        </p>
+        <p className="mb-4">Nom , Adresse , Téléphone</p>
 
         <div className=" mt-5">
           <p className=" text-xl font-semibold text-primary dark:text-cyan-600">
@@ -35,7 +33,7 @@ const MentionsLegales = () => {
           </p>
           <p className="mb-4">
             Tous les contenus présents sur ce site sont protégés par le droit
-            d'auteur. Toute reproduction, représentation, modification,
+            d&#39;auteur. Toute reproduction, représentation, modification,
             publication, adaptation de tout ou partie des éléments du site, quel
             que soit le moyen ou le procédé utilisé, est interdite, sauf
             autorisation écrite préalable.
@@ -45,17 +43,18 @@ const MentionsLegales = () => {
             Protection des données personnelles :
           </p>
           <p className="mb-4">
-            Conformément à la loi "Informatique et Libertés", vous disposez d'un
-            droit d'accès, de rectification et de suppression des données vous
-            concernant. Pour exercer ce droit, vous pouvez nous contacter par
-            email à l'adresse suivante : sebastien.perrot.dev@gmail.com.
+            Conformément à la loi&#39;Informatique et Libertés&#39;, vous
+            disposez d&#39;un droit d&#39;accès, de rectification et de
+            suppression des données vous concernant. Pour exercer ce droit, vous
+            pouvez nous contacter par email à l&#39;adresse suivante :
+            sebastien.perrot.dev@gmail.com.
           </p>
 
           <div className=" mt-12">
             <p>
               En accédant à ce site, vous acceptez les présentes conditions
-              générales d'utilisation. Le site est accessible à tout moment. Une
-              interruption pour raison de maintenance technique peut être
+              générales d&#39;utilisation. Le site est accessible à tout moment.
+              Une interruption pour raison de maintenance technique peut être
               toutefois décidée par le propriétaire du site.
             </p>
             <p>

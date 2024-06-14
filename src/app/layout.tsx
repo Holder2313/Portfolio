@@ -9,18 +9,22 @@ const kulimPark = Kulim_Park({ subsets: ["latin"], weight: ['400', '700'] });
 
 export const metadata: Metadata = {
   title: {
-    template: " Mon Portfolio",
-    default: "Mon Portfolio",
+    template: " Sébastien Perrot | Portfolio",
+    default: "Sébastien Perrot | Portfolio",
   },
-  description: "Portfolio de développeur montrant mes projets et compétences.",
+  description:
+    "Je suis un développeur front-end spécialisé en React et Next.js. Découvrez mes projets et compétences en développement web.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
-    title: "Mon Portfolio",
+    title: "Sébastien Perrot | Portfolio",
     description:
-      "Portfolio de développeur montrant mes projets et compétences.",
-    url: "https://example.com",
+      "Je suis un développeur front-end spécialisé en React et Next.js. Découvrez mes projets et compétences en développement web.",
+    url: "https://sebastien.perrot.portfolio.com",
     images: [
       {
-        url: "https://example.com/og-image.jpg",
+        url: "",
         width: 800,
         height: 600,
         alt: "Image de présentation",
@@ -29,10 +33,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mon Portfolio",
+    title: "Sébastien Perrot | Portfolio",
     description:
-      "Portfolio de développeur montrant mes projets et compétences.",
-    images: ["https://example.com/twitter-image.jpg"],
+      "Je suis un développeur front-end spécialisé en React et Next.js. Découvrez mes projets et compétences en développement web.",
+    images: [""],
   },
 };
 

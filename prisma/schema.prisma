@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+ 
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+model Project {
+  id          Int       @id @default(autoincrement())
+  description String
+  client      String
+  date        String
+  contexte    String   @db.Text   // Utilisation de Text pour de longs textes
+  approche    String   @db.Text   // Optionnel: également pour des longs textes
+  tags        Tag[]
+  images      Image[]
+  altTexts    AltText[]
+  logo        String
+  github      String
+}
+
+model Tag {
+  id        Int      @id @default(autoincrement())
+  name      String
+  projectId Int?
+  project   Project?  @relation(fields: [projectId], references: [id])
+}
+
+model Image {
+  id        Int      @id @default(autoincrement())
+  url       String
+  projectId Int?
+  project   Project?  @relation(fields: [projectId], references: [id])
+}
+
+model AltText {
+  id        Int      @id @default(autoincrement())
+  text      String
+  projectId Int?
+  project   Project?  @relation(fields: [projectId], references: [id])
+}
+
+
+
+

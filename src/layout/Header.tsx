@@ -36,8 +36,8 @@ const Header = () => {
 
   const navLinks = [
     { href: "/", label: "Accueil" },
-    { href: "#about", label: "À propos" },
-    { href: "#projects", label: "Projets" },
+    { href: "/#about", label: "À propos" },
+    { href: "/#projects", label: "Projets" },
     { href: "#contact", label: "Contact", isActive: true },
   ];
 
@@ -54,13 +54,14 @@ const Header = () => {
   return (
     <header className="bg-background fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-2xl">
+        <div className="text-2xl flex gap-2">
           <Link
             href="#"
             className="flex items-center space-x-2 aria-hidden=true"
           >
             <span className={maven.className}>Sébastien Perrot</span>
           </Link>
+          <ToggleTheme />
         </div>
 
         <button
@@ -84,7 +85,6 @@ const Header = () => {
                 : "circle(30px at 90% 10%)",
             }}
           >
-            <div className="absolute -z-10 w-full h-full flex flex-col items-center justify-center md:hidden"></div>
             <ul className="pt-10 md:pt-0 flex flex-col items-center md:flex-row md:space-x-8 text-4xl md:text-xl">
               {navLinks.map((link, index) => (
                 <li
@@ -105,9 +105,6 @@ const Header = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <ToggleTheme />
-              </li>
             </ul>
           </motion.nav>
         )}

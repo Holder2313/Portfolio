@@ -1,5 +1,5 @@
-'use client'
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Title from "../components/ui/title";
 import LinkButtons from "../components/ui/linkButtons";
@@ -42,6 +42,16 @@ const Contact: React.FC = () => {
         setError("Failed to send message, please try again later.");
       });
   };
+
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
 
   return (
     <section id="contact">
@@ -114,8 +124,8 @@ const Contact: React.FC = () => {
           <div className="w-full lg:w-1/2 p-4 flex flex-col items-center lg:items-start">
             <div className="mb-4">
               <p className="text-lg md:text-xl">
-                Pour toute demande d'information ou de collaboration, n'hésitez
-                pas à me contacter.
+                Pour toute demande d&#39;information ou de collaboration,
+                n&#39;hésitez pas à me contacter.
               </p>
             </div>
 
