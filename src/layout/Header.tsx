@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { Maven_Pro } from "next/font/google";
+import LoginButton from "@/components/auth/LoginButton";
+
 
 const maven = Maven_Pro({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -12,6 +14,12 @@ const Header = () => {
   const linkClasses = "p-3 rounded-lg";
   const activeLinkClasses =
     "hover:bg-accent dark:text-primary text-secondary bg-accent p-3 rounded-lg";
+  
+  
+
+  
+
+
 
   const [isOpen, setIsOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
@@ -105,7 +113,10 @@ const Header = () => {
                   </Link>
                 </li>
               ))}
+              <LoginButton  />
             </ul>
+
+            
           </motion.nav>
         )}
       </div>

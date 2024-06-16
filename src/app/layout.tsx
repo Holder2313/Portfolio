@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/layout/Header";
 import Contact from "@/layout/Contact";
 import ThemeProvider from "@/providers/theme-provider";
+import SessionWrapper from "../providers/SessionWrapper";
 
 const kulimPark = Kulim_Park({ subsets: ["latin"], weight: ['400', '700'] });
 
@@ -49,11 +50,14 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning={true} lang="fr">
       <body className={kulimPark.className}>
-        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+        <SessionWrapper>
+           <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Header />
           {children}
           <Contact />
         </ThemeProvider>
+        </SessionWrapper>
+       
       </body>
     </html>
   );

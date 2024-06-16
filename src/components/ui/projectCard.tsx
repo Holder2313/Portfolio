@@ -22,7 +22,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const router = useRouter();
 
-  console.log("ProjectCard", project);
+
 
   return (
     <div className="relative cardShadow border mb-10 max-w-[340px] max-h-[200px] bg-cover bg-center rounded-lg overflow-hidden group cursor-pointer filter brightness-[80%] hover:brightness-[100%] ">

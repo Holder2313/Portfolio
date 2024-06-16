@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { getProjectById } from "../../../../utils/actions";
+import { getProjectById } from "../../../../utils/actions"; 
 
 interface Project {
   id: number;
