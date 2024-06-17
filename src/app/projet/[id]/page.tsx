@@ -19,7 +19,7 @@ interface Project {
   tags: { name: string }[];
   images: { url: string }[];
   altTexts: { text: string }[];
-  logo: string;
+  logo: string | null;
   github?: string;
 }
 
