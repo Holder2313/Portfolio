@@ -41,7 +41,7 @@ export const authConfig = {
         return session;
     },
   },
-    
+    debug: true,
 } satisfies NextAuthOptions
 
 export default nextAuth( authConfig );
