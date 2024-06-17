@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useFormStatus } from "react-dom";
 import { createProject, uploadFile } from "../../../utils/actions";
 import Title from "@/components/ui/title";
-import { useSession, signIn } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 

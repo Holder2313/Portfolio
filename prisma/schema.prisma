@@ -23,7 +23,7 @@ model Project {
   tags        Tag[]
   images      Image[]
   altTexts    AltText[]
-  logo        String
+  logo        String?
   github      String
 }
 
