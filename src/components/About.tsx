@@ -17,14 +17,14 @@ export default function About() {
 
         <div className="flex flex-col-reverse md:flex-row">
           <p className={`text-lg md:text-xl md:w-[60%] ${kulimPark.className}`}>
-            Animé par une passion pour le développement web, j&#39;ai effectué
+            Animé par une passion pour le développement web, j&apos;ai effectué
             une reconversion après plus de 15 ans en tant que commercial. Cette
-            transition m&#39;a permis de canaliser ma curiosité et ma créativité
-            dans la conception de solutions numériques esthétiques et
+            transition m&apos;a permis de canaliser ma curiosité et ma
+            créativité dans la conception de solutions numériques esthétiques et
             fonctionnelles. <br />
             Grâce à mon expérience en communication, je sais comment collaborer
             efficacement et comprendre les besoins des clients. Je suis
-            perpétuellement en quête d&#39;apprentissage, explorant sans cesse
+            perpétuellement en quête d&apos;apprentissage, explorant sans cesse
             de nouvelles technologies et méthodes pour améliorer mes
             compétences. Mon approche du développement web est guidée par une
             volonté de créer des expériences utilisateur intuitives et

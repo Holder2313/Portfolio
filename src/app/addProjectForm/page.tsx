@@ -6,6 +6,7 @@ import { createProject, uploadFile } from "../../../utils/actions";
 import Title from "@/components/ui/title";
 import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const AddProjectForm = () => {
   const { data: session, status } = useSession();
@@ -134,12 +135,14 @@ const AddProjectForm = () => {
               </div>
               {imagePreviews.length > 0 &&
                 imagePreviews.map((preview, index) => (
-                  <img
-                    className="w-[80%] h-[200px] mx-auto object-contain "
-                    key={index}
-                    src={preview}
-                    alt={`Preview ${index + 1}`}
-                  />
+                  <div key={index} className=" relative mx-auto object-contain">
+                    <Image
+                      src={preview}
+                      alt={`Preview ${index + 1}`}
+                      width={300}
+                      height={100}
+                    />
+                  </div>
                 ))}
 
               {Array.from({ length: numOfImages }).map((_, index) => (
