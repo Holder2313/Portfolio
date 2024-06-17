@@ -21,7 +21,7 @@ export const authConfig = {
             clientSecret: githubSecret || "",
         }),
     ],
-    adapter: PrismaAdapter(prisma),
+    adapter: PrismaAdapter(prisma), 
     callbacks: {
     // Callback pour vérifier l'email lors de la connexion
     async signIn({ user }) {
