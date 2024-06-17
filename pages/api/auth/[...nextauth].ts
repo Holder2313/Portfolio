@@ -17,8 +17,8 @@ if ( !githubId || !githubSecret) {
 export const authConfig = {
     providers: [
         GithubProvider( {
-            clientId: githubId || "",
-            clientSecret: githubSecret || "",
+            clientId: githubId,
+            clientSecret: githubSecret,
         }),
     ],
     adapter: PrismaAdapter(prisma), 
