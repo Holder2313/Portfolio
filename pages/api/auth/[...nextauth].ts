@@ -42,6 +42,7 @@ export const authConfig = {
     },
   },
     debug: true,
+    secret: process.env.NEXTAUTH_SECRET,
 } satisfies NextAuthOptions
 
 export default nextAuth( authConfig );
