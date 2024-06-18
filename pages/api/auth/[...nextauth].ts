@@ -32,10 +32,9 @@ export const authConfig = {
             return false; 
         }
     },
-    // Callback pour inclure des informations supplémentaires dans la session
+    
     async session({ session, user }) {
         if (session.user) {
-            // session.user.id = user.id;
             session.user.email = user.email;
         }
         return session;

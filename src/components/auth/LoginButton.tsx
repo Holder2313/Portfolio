@@ -16,7 +16,7 @@ export default function LoginButton() {
   console.log(session, status);
 
   return (
-    <div className=" absolute left-5 top-5 md:relative">
+    <div className=" absolute left-5 top-5 md:top-0 md:relative">
       {session ? (
         <button
           onClick={async () => await signOut()}
@@ -25,7 +25,7 @@ export default function LoginButton() {
         >
           <img
             src={session.user?.image ?? ""} 
-            alt="User Image"
+            alt="avatar github"
             className="w-10 h-10 rounded-full"
           />
         </button>

@@ -15,11 +15,6 @@ const Header = () => {
   const activeLinkClasses =
     "hover:bg-accent dark:text-primary text-secondary bg-accent p-3 rounded-lg";
   
-  
-
-  
-
-
 
   const [isOpen, setIsOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
