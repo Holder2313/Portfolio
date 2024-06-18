@@ -22,9 +22,8 @@ export default function ToggleTheme() {
         variant="ghost"
         size="icon"
         onClick={toggleTheme}
-        // aria-label={
-        //   theme === "dark" ? "Passer au thème clair" : "Passer au thème sombre"
-        // }
+        aria-label="Toggle Theme"
+
       >
         <Moon className=" h-8 w-6 block dark:hidden" />
         <Sun className=" hidden dark:block h-8 w-6 " />

@@ -16,7 +16,7 @@ export default function LoginButton() {
   console.log(session, status);
 
   return (
-    <div>
+    <div className=" absolute left-5 top-5 md:relative">
       {session ? (
         <button
           onClick={async () => await signOut()}

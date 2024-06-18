@@ -34,7 +34,7 @@ const ProjectsSection: React.FC = () => {
 
         {session && 
         <Link href="/addProjectForm">
-        <div className=" flex items-center">
+        <div className=" flex items-center mr-14 mt-5">
           <IoMdAdd size={40} /> 
           <p>Ajouter un nouveau projet</p>
           </div>
