@@ -59,7 +59,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-2xl flex gap-2">
           <Link
-            href="#"
+            href="/"
             className="flex items-center space-x-2 aria-hidden=true"
           >
             <span className={maven.className}>Sébastien Perrot</span>

@@ -10,7 +10,7 @@ const MentionsLegales = () => {
         <p className=" text-xl font-semibold text-primary dark:text-cyan-600">
           Site:
         </p>
-        <p className="mb-4">www.portfolio-sebastien-perrot.fr</p>
+        <p className="mb-4">www.portfolio-sebastien-perrot.com</p>
 
         <p className=" text-xl font-semibold text-primary dark:text-cyan-600">
           Propriétaire :
@@ -25,7 +25,12 @@ const MentionsLegales = () => {
         <p className=" text-xl font-semibold text-primary dark:text-cyan-600">
           Hébergement :
         </p>
-        <p className="mb-4">Nom , Adresse , Téléphone</p>
+        <ul className="mb-4">
+          <li>Nom de l'hébergeur : Vercel Inc. </li>
+          <li>Adresse : 340 S Lemon Ave #4133, Walnut, CA 91789</li>
+          <li>Email : support@vercel.com</li>
+          <li>Site web : https://vercel.com</li>
+        </ul>
 
         <div className=" mt-5">
           <p className=" text-xl font-semibold text-primary dark:text-cyan-600">
